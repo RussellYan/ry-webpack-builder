@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import logo from '../assets/webpack.jpeg';
-import colors from '../assets/colors.svg'
-import './search.less'
+import colors from '../assets/colors.svg';
+import './search.less';
 // 注释
 class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Text: null
+      Text: null,
     }
   }
   loadComp = () => {
@@ -28,8 +27,7 @@ class Search extends React.Component {
     return (
       <div className='search'>
         search content ===
-        <img src={colors} />
-        <img src={logo} onClick={this.loadComp}/>
+        <img src={colors} onClick={this.loadComp}/>
         {Text && <Text />}
       </div>
     )
