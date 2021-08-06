@@ -1,0 +1,5 @@
+/node_modules
+/logs
+/.nyc_output
+/coverage
+/test/smoke/template/node_modules
